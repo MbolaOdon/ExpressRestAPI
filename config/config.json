@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "odonAdmin",
+    "database": "g_etudiant_android_m1",
+    "host": "127.0.0.1",
+      "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "odonAdmin",
+    "database": "g_etudiant_android_m1",
+    "host": "127.0.0.1",
+      "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+      "dialect": "postgres"
+  }
+}
