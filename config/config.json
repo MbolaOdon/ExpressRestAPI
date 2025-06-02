@@ -1,11 +1,15 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "odonAdmin",
-    "database": "g_etudiant_android_m1",
-    "host": "127.0.0.1",
-      "dialect": "postgres"
-  },
+  "username": "postgres",
+  "password": "odonAdmin",
+  "database": "g_etudiant_android_m1",
+  "host": "localhost",
+  "port": 5432, 
+  "dialect": "postgres",
+  "dialectOptions": {
+    "ssl": false
+  }
+},
   "test": {
     "username": "androidm1_owner",
     "password": "npg_aYe14qVOoQsR",
@@ -13,11 +17,23 @@
     "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
       "dialect": "postgres"
   },
-  "production": {
-    "username": "androidm1_owner",
-    "password": "npg_aYe14qVOoQsR",
-    "database": "androidm1",
-    "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
-      "dialect": "postgres"
+ "production": {
+  "username": "androidm1_owner",
+  "password": "npg_aYe14qVOoQsR",
+  "database": "androidm1",
+  "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
+  "dialect": "postgres",
+  "dialectOptions": {
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": true
+    }
+  },
+  "pool": {
+    "max": 5,
+    "min": 0,
+    "acquire": 30000,
+    "idle": 10000
   }
+}
 }
