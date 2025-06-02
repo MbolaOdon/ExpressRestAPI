@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   test: {
-    url: process.env.DATABASE_URL,
+    use_env_variable: process.env.DATABASE_URL,
     password:"npg_aYe14qVOoQs",
     dialect: 'postgres',
     dialectOptions: {
@@ -24,7 +24,7 @@ module.exports = {
     }
   },
   production: {
-    url: process.env.DATABASE_URL,
+    use_env_variable: process.env.DATABASE_URL,
     password:"npg_aYe14qVOoQs",
     dialect: 'postgres',
     dialectOptions: {
