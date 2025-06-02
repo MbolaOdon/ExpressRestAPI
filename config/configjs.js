@@ -1,9 +1,10 @@
 const dotenv = require('dotenv');
 dotenv.config();
+
 module.exports = {
   development: {
     username: "postgres",
-    password: "odonAdmin",
+    password: "odonAdmin", 
     database: "g_etudiant_android_m1",
     host: "localhost",
     port: 5432,
@@ -18,18 +19,18 @@ module.exports = {
     dialectOptions: {
       ssl: {
         require: true,
-        rejectUnauthorized: true
+        rejectUnauthorized: false // Changé à false pour éviter les erreurs de certificat
       },
       quoteIdentifiers: false
     }
   },
   production: {
-    use_env_variable: "DATABASE_URL",
+    use_env_variable: "DATABASE_URL", 
     dialect: 'postgres',
     dialectOptions: {
       ssl: {
         require: true,
-        rejectUnauthorized: true
+        rejectUnauthorized: false // Changé à false pour la compatibilité
       },
       quoteIdentifiers: false
     }

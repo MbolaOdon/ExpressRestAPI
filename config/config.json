@@ -12,7 +12,7 @@
 },
   "test": {
     "username": "androidm1_owner",
-    "password": "npg_aYe14qVOoQsR",
+    "password": "npg_2d0LrtGCHpZN",
     "database": "androidm1",
     "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
     "dialect": "postgres",
@@ -20,7 +20,7 @@
   },
  "production": {
   "username": "androidm1_owner",
-  "password": "npg_aYe14qVOoQsR",
+  "password": "npg_2d0LrtGCHpZN",
   "database": "androidm1",
   "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
   "dialect": "postgres",
