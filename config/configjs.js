@@ -14,7 +14,6 @@ module.exports = {
   },
   test: {
     use_env_variable: "DATABASE_URL",
-    password:"npg_2d0LrtGCHpZN",
     dialect: 'postgres',
     dialectOptions: {
       ssl: {
@@ -25,7 +24,6 @@ module.exports = {
   },
   production: {
     use_env_variable: "DATABASE_URL",
-    password:"npg_2d0LrtGCHpZN",
     dialect: 'postgres',
     dialectOptions: {
       ssl: {
