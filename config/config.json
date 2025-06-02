@@ -11,18 +11,12 @@
   }
 },
   "test": {
-    "username": "androidm1_owner",
-    "password": "npg_aYe14qVOoQsR",
-    "database": "androidm1",
-    "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
+    "url":"postgresql://androidm1_owner:npg_aYe14qVOoQsR@ep-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech/androidm1?sslmode=require",
     "dialect": "postgres",
     "port": 5432
   },
  "production": {
-  "username": "androidm1_owner",
-  "password": "npg_aYe14qVOoQsR",
-  "database": "androidm1",
-  "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
+  "url":"postgresql://androidm1_owner:npg_aYe14qVOoQsR@ep-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech/androidm1?sslmode=require",
   "dialect": "postgres",
   "port": 5432,
   "dialectOptions": {
