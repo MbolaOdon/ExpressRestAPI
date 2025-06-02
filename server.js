@@ -68,7 +68,6 @@ async function startServer() {
     console.log(`Hôte: ${dbConfig.host || dbConfig.url}`);
     console.log(`Base de données: ${dbConfig.database}`);
     console.log(`Utilisateur: ${dbConfig.username}`);
-    console.log(`Utilisateur: ${dbConfig.password}`);
     console.log('===============================\n');
     
     // Le serveur peut quand même démarrer en mode dégradé
