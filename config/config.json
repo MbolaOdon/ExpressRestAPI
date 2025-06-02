@@ -23,6 +23,7 @@
   "database": "androidm1",
   "host": "p-red-feather-a5vuwsx9-pooler.us-east-2.aws.neon.tech",
   "dialect": "postgres",
+  "port": 5432,
   "dialectOptions": {
     "ssl": {
       "require": true,
