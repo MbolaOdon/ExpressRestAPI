@@ -19,7 +19,7 @@ sequelize.authenticate()
     return sequelize.sync(); // Synchroniser les modèles avec la BDD
   })
   .then(() => {
-    app.listen(3000, () => {
+    app.listen(3000, '0.0.0.0',() => {
       console.log('🚀 Serveur démarré sur http://localhost:3000');
     });
   })
