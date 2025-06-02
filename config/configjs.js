@@ -19,7 +19,8 @@ module.exports = {
       ssl: {
         require: true,
         rejectUnauthorized: true
-      }
+      },
+      quoteIdentifiers: false
     }
   },
   production: {
@@ -29,7 +30,8 @@ module.exports = {
       ssl: {
         require: true,
         rejectUnauthorized: true
-      }
+      },
+      quoteIdentifiers: false
     }
   }
 };
