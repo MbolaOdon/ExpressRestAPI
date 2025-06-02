@@ -3,7 +3,7 @@ const app = express();
 const etudiantRoutes = require('./routes/etudiants');
 const utilisateurRoutes = require('./routes/utilisateurs');
 const sequelize = require('./config/database'); // Assure-toi que ce fichier existe
-
+const PORT = process.env.PORT || 3000;
 // Middleware pour parser les requêtes JSON
 app.use(express.json());
 
@@ -19,7 +19,7 @@ sequelize.authenticate()
     return sequelize.sync(); // Synchroniser les modèles avec la BDD
   })
   .then(() => {
-    app.listen(3000, '0.0.0.0',() => {
+    app.listen(PORT, '0.0.0.0',() => {
       console.log('🚀 Serveur démarré sur http://localhost:3000');
     });
   })
